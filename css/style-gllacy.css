@@ -215,6 +215,7 @@ h3 {
   width: 341px;
   background: #f8f7f4;
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);
 }
 
 .search-form-text {
@@ -292,6 +293,7 @@ h3 {
   box-sizing: border-box;
   background: #f8f7f4;
   border-radius: 5px;
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);
 }
 
 .login-form-field {
@@ -398,6 +400,7 @@ h3 {
 
 .shopping-list {
   position: absolute;
+  display: none;
   z-index: 2;
   top: 37px;
   left: -423px;
@@ -408,6 +411,7 @@ h3 {
   border-radius: 5px;
   color: #323232;
   font: normal 13px/16px "Roboto", "Arial", sans-serif;
+  box-shadow: 0px 20px 20px 0px rgba(0,0,0,0.4);
 }
 
 .shopping-list-first {
@@ -446,6 +450,8 @@ h3 {
 
 .modal-content-close {
   position: absolute;
+  margin-top: 2px;
+  left: 17px;
   width: 11px;
   height: 11px;
   font-size: 0;
@@ -458,9 +464,8 @@ h3 {
 .modal-content-close::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -70px;
-  width: 15px;
+  left: 0;
+  width: 13px;
   height: 1px;
   background-color: #676766;
 }
@@ -1096,7 +1101,9 @@ h3 {
 .breadcrumbs-information {
   display: flex;
   align-items: flex-end;
+  padding: 0 27px;
 }
+
 .information-main {
   margin-right: 27px;
 }
@@ -1188,14 +1195,13 @@ h3 {
 }
 
 .container-catalog {
-  margin: 0 27px 0 27px;
   padding-bottom: 35px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .creamy-icecream {
   margin: 9px 0 33px 0;
-  padding-bottom: 35px;
+  padding: 0 27px;
 }
 
 .main-sorting {
@@ -1203,6 +1209,7 @@ h3 {
   align-items: center;
   width: 880px;
   margin: 0 15px 40px 0;
+  padding: 0 27px;
   flex-flow: wrap;
 }
 
@@ -1452,23 +1459,47 @@ h3 {
 
 .index-content-creamy article {
   position: relative;
-  width: 267px;
-  margin: 0 26px 37px 0;
+  width: 293px;
+  margin: 0 0 37px 0;
+  padding: 0 13px;
+  box-sizing: border-box;
 }
 
 .index-content-creamy article:nth-child(4n) {
   margin-right: 0;
 }
 
-.index-content-creamy article::after {
+.index-content-creamy .creamy-content::after {
   content: "";
   position: absolute;
-  top: 217px;
+  z-index: 4;
+  top: 220px;
   left: 82px;
   width: 31px;
   height: 36px;
   background: url(../img/spritesheet.png) no-repeat;
   background-position: -5px -5px;
+}
+
+.creamy-content {
+  position: relative;
+}
+
+.quick-view {
+  position: absolute;
+  display: none;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 293px;
+  padding: 339px 0 22px 40px;
+  background: rgba(248, 247, 244, 0.3);
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.creamy:hover .quick-view {
+  display: block;
 }
 
 .index-content-creamy a {
@@ -1501,6 +1532,7 @@ h3 {
   width: 190px;
   margin-top: 45px;
   margin-left: auto;
+  margin-right: 27px;
 }
 
 .paginator a {
