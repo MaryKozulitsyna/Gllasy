@@ -331,6 +331,16 @@ h3 {
   cursor: pointer;
 }
 
+.btn-login:hover {
+  background:         linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.btn-login:active {
+  background:         linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+  box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
 .login-check {
   display: inline-block;
   width: 123px;
@@ -746,8 +756,7 @@ h3 {
 
 .hit a:hover {
   color:#ffbc9e;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
+
 }
 
 .gllacy-shop {
@@ -861,8 +870,6 @@ h3 {
 
 .blog a:hover {
   color:#e84d37;
-  text-decoration: none;
-  border-bottom: 1px solid rgba(236, 89, 60, 0.3);
 }
 
 .newsletter {
@@ -1096,7 +1103,90 @@ h3 {
   border-bottom: 1px solid #9db1a5;
 }
 
+.feedback-form {
+  position: absolute;
+  display: none;
+  top: 338px;
+  left: 388px;
+  width: 477px;
+  box-sizing: border-box;
+  padding-right: 25px;
+  background: #f8f7f4;
+  border-radius: 5px;
+}
 
+.feedback-form span {
+  display: inline-block;
+  font: normal 24px/28px "Roboto", "Arial", sans-serif;
+  color: #323232;
+  margin: 20px 20px;
+}
+
+.feedback-form .feedback-text {
+  box-sizing: border-box;
+  width: 267px;
+  height: 44px;
+  padding-left: 15px;
+  margin: 0 0 20px 24px;
+  border: 1px solid #d3d3d2;
+  border-radius: 3px;
+}
+
+.feedback-form .feedback-type {
+  box-sizing: border-box;
+  width: 428px;
+  height: 155px;
+  padding: 15px 10px 120px 15px;
+  margin: 0 0 24px 24px;
+  border: 1px solid #d3d3d2;
+  border-radius: 3px;
+  vertical-align: top;
+}
+
+.btn-send {
+  display: block;
+  margin: 0 0 24px auto;
+}
+
+.feedback-form input:hover {
+  border-radius: 3px;
+  border: 2px solid #c7c6c5;
+}
+
+.feedback-form input:focus {
+  border-radius: 3px;
+  border: 2px solid #8fbdec;
+}
+
+.feedback-form-close{
+  position: absolute;
+  margin-top: 18px;
+  left: 444px;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.feedback-form-close::before,
+.feedback-form-close::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.feedback-form-close::before {
+  transform: rotate(45deg);
+}
+
+.feedback-form-close::after {
+  transform: rotate(-45deg);
+}
 
 .breadcrumbs-information {
   display: flex;
@@ -1128,6 +1218,12 @@ h3 {
 .breadcrumbs a:last-child {
   border-bottom: none;
   margin-bottom: 2px;
+}
+
+.breadcrumbs-position a:hover {
+  color:#ffbc9e;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(249, 172, 159, 0.3);
 }
 
 .next-breadcrumbs::before {
